@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  /* kuning (251,201,37) #fbc925 */
+  /* biru tua (0,150,166) #0096a6 */
+  /* biru muda (8,180,206) #08b4ce */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* AWAL MOBILE */
+/* navbar */
+.menu-nav {
+  /* background-color: #08b4ce; */
+  background: linear-gradient(to right, #08b4ce 30%, #0096a6);
+  box-shadow: 0px 5px 10px white;
+}
+.menu-nav .navbar-toggler {
+  background: linear-gradient(to right bottom, white 30%, #fbc925);
+  padding: 2px 5px;
+}
+.menu-nav .navbar-toggler:active {
+  box-shadow: 0px 0px 5px white;
+  border: none;
+}
+.menu-nav .nav-link {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+.menu-nav .nav-link:hover {
+  color: #fbc925;
+  text-shadow: 0px 0px 2px red;
+}
+/* jumbotron */
+.banner {
+  background: url(img/kids.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  opacity: 0.3;
+}
+.banner .teks {
+  margin-top: 80px;
+  color: white;
+  z-index: 999;
+}
+.banner .teks h1 {
+  font-weight: 800;
+  letter-spacing: 3px;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px #0096a6;
+}
+.banner .teks p {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #0096a6;
+}
+.banner .teks p a {
+  color: white;
+  font-style: italic;
+}
+.banner .teks p a:hover {
+  color: #fbc925;
+}
+.banner .teks .btn {
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+}
+/* bag 2 */
+.bag2 {
+  border: none;
+  background: linear-gradient(to right bottom, white 40%, #08b4ce);
+  box-shadow: 0px 0px 10px darkblue;
+  font-weight: 600;
+}
+.bag2 .card-body {
+  padding: 0;
+  padding-top: 5px;
+}
+/* bag 3 */
+.bag3 .accordion-button {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  padding: 10px 15px;
+  background-color: #08b4ce;
+}
+.bag3 .accordion-body {
+  font-size: 15px;
+  padding: 5px;
+}
+.bag3 h4 {
+  text-shadow: 1px 1px 1px #0096a6;
+}
+/* bag 4 */
+.bag4 h4 {
+  text-shadow: 1px 1px 1px #0096a6;
+}
+/* bag 5 */
+.alert {
+  background: linear-gradient(#fbc925, white);
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0px 0px 10px orangered;
+}
