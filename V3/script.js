@@ -1,6 +1,5 @@
 // FORM SUBMIT
-const scriptURL =
-  "https://script.google.com/macros/s/AKfycbx7R8JYF7gxCGx8J_UbdlGl-EarvIUP_U0HAuPx-I_itZ_UE9JAenqKJ-BLIndse20J/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbx7R8JYF7gxCGx8J_UbdlGl-EarvIUP_U0HAuPx-I_itZ_UE9JAenqKJ-BLIndse20J/exec";
 
 const form = document.forms["dcc-contact-form"];
 const btnKirim = document.querySelector(".btn-kirim");
@@ -29,7 +28,7 @@ form.addEventListener("submit", (e) => {
 });
 
 // FORM FREE TRIAL HOME
-function waTrialHome() {
+function waTrialClass() {
   const namaAnak = document.getElementById("namaAnak").value;
   const usiaAnak = document.getElementById("usia").value;
   const namaOrtu = document.getElementById("namaOrtu").value;
@@ -43,21 +42,7 @@ function waTrialHome() {
     setuju = "*Saya setuju untuk mengikuti kebijakan privasi*";
   }
 
-  const waUrl =
-    "https://wa.me/6283851744849/?text=" +
-    "Halo DCC, saya ingin reservasi jadwal _Trial Class_ yaaa 😊. Berikut data diri saya," +
-    "%0a%0aNama Anak : " +
-    namaAnak +
-    "%0aUsia Anak : " +
-    usiaAnak +
-    "%0aNama Orang Tua : " +
-    namaOrtu +
-    "%0aNo. HP Orang Tua : " +
-    noHp +
-    "%0aEmail Aktif : " +
-    email +
-    "%0a%0a" +
-    setuju;
+  const waUrl = "https://wa.me/6283851744849/?text=" + "Halo DCC, saya ingin reservasi jadwal _Trial Class_ yaaa 😊. Berikut data diri saya," + "%0a%0aNama Anak : " + namaAnak + "%0aUsia Anak : " + usiaAnak + "%0aNama Orang Tua : " + namaOrtu + "%0aNo. HP Orang Tua : " + noHp + "%0aEmail Aktif : " + email + "%0a%0a" + setuju;
 
   window.open(waUrl, "_blank").focus();
   location.href = "index.html";

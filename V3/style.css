@@ -1,33 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* kuning (251,201,37) #fbc925 */
+/* biru tua (0,150,166) #0096a6 */
+/* biru muda (8,180,206) #08b4ce */
+/* lebar layar komputer 1920 */
+
 html {
   scroll-behavior: smooth;
-  /* kuning (251,201,37) #fbc925 */
-  /* biru tua (0,150,166) #0096a6 */
-  /* biru muda (8,180,206) #08b4ce */
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
-/* AWAL MOBILE */
+/* MOBILE */
 /* navbar */
 .menu-nav {
-  /* background-color: #08b4ce; */
-  background: linear-gradient(to right, #08b4ce 30%, #0096a6);
-  box-shadow: 0px 5px 10px white;
+  background-color: #08b4ce;
 }
 .menu-nav .navbar-toggler {
   background: linear-gradient(to right bottom, white 30%, #fbc925);
   padding: 2px 5px;
 }
 .menu-nav .navbar-toggler:active {
-  box-shadow: 0px 0px 5px white;
+  box-shadow: 1px 1px 1px white;
   border: none;
+  transform: scale(0.9);
 }
 .menu-nav .nav-link {
   color: white;
@@ -36,7 +35,7 @@ html {
 }
 .menu-nav .nav-link:hover {
   color: #fbc925;
-  text-shadow: 0px 0px 2px red;
+  text-shadow: 1px 1px 1px black;
 }
 /* jumbotron */
 .banner {
@@ -53,27 +52,26 @@ html {
   height: 100vh;
   background-color: black;
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.25;
 }
 .banner .teks {
-  margin-top: 80px;
-  color: white;
   z-index: 999;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 .banner .teks h1 {
   font-weight: 800;
-  letter-spacing: 3px;
   font-size: 30px;
-  text-shadow: 1px 1px 1px #0096a6;
+  letter-spacing: 2px;
 }
 .banner .teks p {
   font-weight: 600;
   letter-spacing: 1px;
-  text-shadow: 1px 1px 1px #0096a6;
 }
 .banner .teks p a {
   color: white;
   font-style: italic;
+  text-shadow: 1px 1px 1px black;
 }
 .banner .teks p a:hover {
   color: #fbc925;
@@ -81,7 +79,9 @@ html {
 .banner .teks .btn {
   font-size: 18px;
   font-weight: 600;
+  letter-spacing: 1px;
   border-radius: 50px;
+  box-shadow: 1px 1px 1px white;
 }
 /* bag 2 */
 .bag2 {
@@ -106,12 +106,32 @@ html {
   font-size: 15px;
   padding: 5px;
 }
+.bag3 .accordion-item {
+  margin-bottom: 10px;
+}
 .bag3 h4 {
   text-shadow: 1px 1px 1px #0096a6;
 }
 /* bag 4 */
+.bag4 {
+  background: linear-gradient(white, #08b4ce8f, white);
+  padding: 30px 0px;
+}
 .bag4 h4 {
   text-shadow: 1px 1px 1px #0096a6;
+}
+.bag4 .item {
+  font-size: 15px;
+  width: 120px;
+  height: 160px;
+  font-weight: 500;
+  margin: 5px;
+}
+.bag4 .item img {
+  border-radius: 50%;
+  width: 70px;
+  background-color: white;
+  margin-bottom: 10px;
 }
 /* bag 5 */
 .alert {
@@ -120,4 +140,279 @@ html {
   font-weight: 600;
   font-size: 16px;
   box-shadow: 0px 0px 10px orangered;
+}
+.bag5 h4 {
+  font-size: 30px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding-top: 5px;
+  text-align: center;
+  line-height: 60px;
+  text-shadow: 1px 1px 1px #0096a6;
+  background: linear-gradient(#08b4ce54, white);
+  margin: auto;
+  box-shadow: 2px 2px 2px #08b4ce;
+}
+.bag5 .teks img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+.bag5 .item {
+  width: 300px;
+  display: flex;
+  margin: 15px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #08b4ce 10%, white);
+}
+.bag5 .item p {
+  margin-left: 40px;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 15px;
+}
+/* testimoni */
+swiper-container {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  border-radius: 10px;
+  filter: blur(4px);
+  background-color: #d1ebff;
+}
+swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.testi h4 {
+  text-shadow: 1px 1px 1px #0096a6;
+}
+.swiper-slide-active {
+  filter: blur(0);
+  background-color: rgb(229, 248, 255);
+}
+.testiBox {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+}
+.testiBox p {
+  text-align: center;
+  font-size: 15px;
+}
+.testiBox .detail {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.testiBox .detail h3 {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.1em;
+  color: #2196f3;
+  margin-left: 20px;
+}
+.testiBox .detail span {
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+}
+.testiBox .imgBox {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: white;
+}
+.testiBox .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TABLET ke LAPTOP */
+@media (min-width: 850px) {
+  /* navbar */
+  .menu-nav .navbar-brand img {
+    width: 180px;
+    margin-left: 30px;
+  }
+  .menu-nav .nav-link {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .menu-nav ul {
+    margin-right: 30px;
+  }
+  /* jumbotron */
+  .banner .teks h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+  .banner .teks p,
+  .banner .teks a {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .banner .teks .btn {
+    font-size: 22px;
+  }
+  .banner .teks {
+    margin: 0px 30px;
+  }
+  /* bag 2,3,4,5 */
+  .bag2 p {
+    font-size: 20px;
+  }
+  .bag3 h4,
+  .bag4 h4,
+  .testi h4 {
+    font-size: 30px;
+  }
+  .bag3 .accordion-button {
+    font-size: 20px;
+  }
+  .bag3 .accordion-body {
+    font-size: 18px;
+  }
+  .bag4 .item {
+    font-size: 18px;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+  }
+  .bag4 .item img {
+    width: 85px;
+  }
+  .alert {
+    font-size: 20px;
+  }
+  .bag5 h4 {
+    font-size: 35px;
+    width: 140px;
+    height: 140px;
+    padding-top: 15px;
+  }
+  .bag5 .item p {
+    font-size: 18px;
+  }
+  .testiBox p {
+    font-size: 18px;
+  }
+  .testiBox .detail h3 {
+    font-size: 15px;
+  }
+  .testiBox .detail span {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1000px) {
+  /* bag 3 */
+  .bag3 {
+    width: 80vw;
+    margin: auto !important;
+    margin-top: 3rem !important;
+  }
+}
+/* LAPTOP BESAR */
+@media (min-width: 1700px) {
+  /* navbar */
+  .menu-nav .navbar-brand img {
+    width: 200px;
+  }
+  .menu-nav .nav-link {
+    font-size: 23px;
+  }
+  /* jumbotron */
+  .banner .teks {
+    width: 70vw;
+  }
+  .banner .teks h1 {
+    font-size: 55px;
+  }
+  .banner .teks p,
+  .banner .teks a {
+    font-size: 25px;
+  }
+  .banner .teks .btn {
+    font-size: 27px;
+  }
+  /* bag 2,3,4,5 */
+  .bag2 p {
+    font-size: 23px;
+  }
+  .bag3 h4,
+  .bag4 h4 {
+    font-size: 35px;
+  }
+  .bag3 .accordion-button {
+    font-size: 25px;
+  }
+  .bag3 .accordion-body {
+    font-size: 23px;
+  }
+  .alert {
+    font-size: 23px;
+  }
+  .bag3 {
+    width: 70vw;
+  }
+  .bag4 .item {
+    font-size: 23px;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+  }
+  .bag4 .item img {
+    width: 100px;
+  }
+  .bag4 .teks {
+    margin-bottom: 50px;
+  }
+  .bag5 h4 {
+    font-size: 38px;
+  }
+  .bag5 .item p {
+    font-size: 23px;
+  }
+  .bag5 .item {
+    width: 400px;
+  }
+  .bag5 .teks img {
+    width: 80px;
+    height: 80px;
+  }
+  .bag5 .item p {
+    margin-left: 70px;
+  }
+  .testi h4 {
+    font-size: 38px;
+  }
+  .testiBox p {
+    font-size: 23px;
+  }
+  .testiBox .detail h3 {
+    font-size: 18px;
+  }
+  .testiBox .detail span {
+    font-size: 19px;
+  }
+  swiper-slide {
+    width: 400px;
+  }
 }
