@@ -47,3 +47,8 @@ function waTrialClass() {
   window.open(waUrl, "_blank").focus();
   location.href = "index.html";
 }
+
+// PROGRAM TOMBOL LEVEL
+function program(level) {
+  document.getElementById("class").innerHTML = document.getElementById(level).innerHTML;
+}
