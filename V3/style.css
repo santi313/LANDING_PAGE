@@ -176,6 +176,73 @@ html {
   font-weight: 500;
   font-size: 15px;
 }
+/* program */
+.program {
+  background: linear-gradient(#fbc9252a, white);
+  border-radius: 30px;
+  height: 80vh;
+}
+.program h4 {
+  text-shadow: 1px 1px 1px #0096a6;
+}
+.program label,
+.program button,
+.program button {
+  font-size: 15px;
+}
+.program .btn {
+  border-radius: 0;
+  font-weight: 500;
+}
+.program .btn:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+.program .detail {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.program .judul {
+  font-size: 16px;
+  border-bottom: 2px solid black;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+.program .ket {
+  font-size: 15px;
+}
+.program .judul span {
+  font-weight: 700;
+  width: 50%;
+  background-color: #08b4ce;
+  box-shadow: 1px 1px 2px darkgrey;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  padding: 5px 3px;
+  margin: 0 2px;
+  border-radius: 10px;
+}
+.program .carousel-indicators [data-bs-target] {
+  background-color: #0d6efd;
+  margin-top: 100px;
+  height: 15px;
+  width: 50px;
+}
+.program .carousel-indicators {
+  margin-bottom: -30px;
+  z-index: 0;
+}
+/* student project */
+.project h4 {
+  text-shadow: 1px 1px 1px #0096a6;
+}
+.project {
+  background: linear-gradient(white, #fbc9252a);
+  border-radius: 30px;
+  height: 500px;
+}
 /* testimoni */
 swiper-container {
   width: 100%;
@@ -216,7 +283,7 @@ swiper-slide img {
   margin-top: 20px;
 }
 .testiBox .detail h3 {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.1em;
@@ -224,7 +291,7 @@ swiper-slide img {
   margin-left: 20px;
 }
 .testiBox .detail span {
-  font-size: 14px;
+  font-size: 13px;
   color: black;
   font-weight: 500;
 }
@@ -246,6 +313,12 @@ swiper-slide img {
 }
 
 /* TABLET ke LAPTOP */
+@media (min-width: 425px) {
+  .program .video {
+    width: 400px;
+    margin: auto;
+  }
+}
 @media (min-width: 850px) {
   /* navbar */
   .menu-nav .navbar-brand img {
@@ -311,11 +384,24 @@ swiper-slide img {
   .bag5 .item p {
     font-size: 18px;
   }
+  /* program */
+  .program h4 {
+    font-size: 30px;
+  }
+  .program label,
+  .program .ket,
+  .program button {
+    font-size: 18px;
+  }
+  .program .judul {
+    font-size: 20px;
+  }
+  /* testimoni */
   .testiBox p {
     font-size: 18px;
   }
   .testiBox .detail h3 {
-    font-size: 15px;
+    font-size: 18px;
   }
   .testiBox .detail span {
     font-size: 16px;
@@ -400,6 +486,19 @@ swiper-slide img {
   .bag5 .item p {
     margin-left: 70px;
   }
+  /* program */
+  .program h4 {
+    font-size: 38px;
+  }
+  .program label,
+  .program .ket,
+  .program button {
+    font-size: 23px;
+  }
+  .program .judul {
+    font-size: 25px;
+  }
+  /* testimoni */
   .testi h4 {
     font-size: 38px;
   }
@@ -407,7 +506,7 @@ swiper-slide img {
     font-size: 23px;
   }
   .testiBox .detail h3 {
-    font-size: 18px;
+    font-size: 23px;
   }
   .testiBox .detail span {
     font-size: 19px;
